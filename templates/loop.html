@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>My Webpage!</title> 
+    </head>
+    <body> 
+        <h1>Hello World!</h1>
+        {{content}}
+        {% for i in "Basically" %}
+            i <!--without the curly, it'll print just the letter i-->
+        {% endfor %}
+
+        {%for x in range(10) %}
+            {% if x % 2 == 0 %}
+                {{x}}
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
